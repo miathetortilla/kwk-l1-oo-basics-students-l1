@@ -17,7 +17,7 @@ def turn_page
 end
 
 
-book = Book.new("Book1","Agatha Christie")
+book = Book.new("And Then There Were None","Agatha Christie")
 
 
 book.turn_page
