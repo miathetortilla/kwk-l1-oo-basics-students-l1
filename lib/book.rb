@@ -1,7 +1,9 @@
 class Book
   
-  def initialize(title, author)
+  def initialize(title, author, turn_page = "Flipping the page...wow, you read fast!")
     @title = title
+    @author = author
+    @turn_page = turn_page
   end
   
   def title
@@ -13,7 +15,7 @@ class Book
   end
 
   def turn_page
-    puts "Flipping the page...wow, you read fast!"
+  @turn_page
   end
 end
 
@@ -21,7 +23,7 @@ end
 book = Book.new("And Then There Were None","Agatha Christie")
 
 
-book.turn_page
-book.author
 book.title
+book.author
+book.turn_page
 
